@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Prevent scrolling on the body */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    flex-shrink: 0; /* Ensure header does not shrink */
+}
+
+.content {
+    display: flex;
+    flex: 1;
+    overflow: hidden; /* Prevent scrolling in the content area */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#messages {
+    flex: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+ul#users {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#users li {
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+ul#users li button {
+    background-color: #f4f4f4;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+ul#users li button:hover {
+    background-color: #c7c7c7;
+}
+
+#messageInput {
+    width: 300px;
+    height: auto;
+    max-height: 150px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    resize: none;
+}
+
+.chat-input {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+    align-items: center;
+}
+
+.chat-input textarea {
+    flex: 1; /* Take up available space */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+    overflow-y: hidden;
+    max-height: 150px;
+}
+
+.chat-input button {
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #0056b3;
+}
+
+.selection-buttons {
+    display: flex;
+}
+
+.selection-buttons button {
+    flex: 1;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.selection-buttons button:hover {
+    background-color: #0056b3;
+}

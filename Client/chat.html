@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aidan's Chat Program</title>
+    <link rel="stylesheet" href="CSS/chat_style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="header"></h1>
+        </header>
+        <div class="content">
+            <aside class="sidebar">
+                <div class="selection-buttons">
+                    <button onclick="updateChannelList()">Channels</button>
+                    <button onclick="getChannelUsers()">Users</button>
+                </div>
+                <ul id="users"></ul>
+            </aside>
+            <main class="chat-container">
+                <div id="messages"></div>
+                <div class="chat-input">
+                    <textarea id="messageInput" placeholder="Enter message"></textarea>
+                    <button onclick="sendMessage()">Send</button>
+                    <button onclick="logout()">Logout</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="Scripts/channels.js"></script>
+    <script src="Scripts/chat.js"></script>
+</body>
+</html>
