@@ -4,4 +4,14 @@
 - This code has been modified to run on the local machine.
 - This has a WebApp and an Electron made desktop app.
 - I used Flask to handle the HTTP requests and used SQLite for the database.
-- This is my first time making a WeAapp so expect some bugs and issues in the code. 
+- This is my first time making a WeAapp so expect some bugs and issues in the code.
+
+# How To Run Electron Code
+- To run the Electron code install the Electron dependicies using
+```shell
+npm install --save-dev electron
+```
+- Then run
+```shell
+npm start
+```
